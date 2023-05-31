@@ -8,8 +8,7 @@
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description">
-        A variation of a 3D pie chart with an inner radius added.
-        These charts are often referred to as donut charts.
+        Information presented here is not final or confirmed. Please note that this presentation is purely visual!
     </p>
 </figure>
 <style>
@@ -59,8 +58,10 @@
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+
 </style>
 <script>
+// Data is for $BTOC distribution only
 Highcharts.chart('container', {
     chart: {
         type: 'pie',
@@ -70,30 +71,30 @@ Highcharts.chart('container', {
         }
     },
     title: {
-        text: '$BTOC distribution by communities',
-        align: 'left'
+        text: '$BTOC',
+        align: 'center'
     },
     subtitle: {
-        text: 'T0Cs official brc20 token',
+        text: 'T0Cs official brc20 $BTOC token distribution:',
         align: 'left'
     },
     plotOptions: {
         pie: {
-            innerSize: 100,
+            innerSize: 150,
             depth: 45
         }
     },
     series: [{
         name: '$BTOC',
         data: [
-            ['CEX', 500],
-            ['PG holders', 2000],
-            ['SOL holders', 1500],
-            ['ORD holders', 2000],
-            ['ETH holders', 2000],
-            ['TOC holders', 2000],
-            ['Public', 1000],
-            ['DJ holders', 1000]
+            ['CEX', 1],
+            ['PG holders', 2],
+            ['SOL communities', 1],
+            ['ORD communities', 2],
+            ['ETH communities', 2],
+            ['TOW holders', 2],
+            ['DJ holders', 1],
+            ['Public', 1]
 
         ]
     }]
